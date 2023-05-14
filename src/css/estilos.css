@@ -1,0 +1,112 @@
+body{
+    font-family: 'Poppins',sans-serif;
+    max-width: 1280px ;
+    margin: 0 auto;
+    background-color: #f50808e3;
+    color: #333333;
+}
+body.modo-escuro{
+    background-color: #212121;
+    color: #d8e3ec;
+}
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+header .logo, header .imagem-botao{
+    width: 50px;
+    transition: 0.2s ease-in-ou;
+    
+}
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo:hover, header .imagem-botao:hover , main .cartao-pokemon:hover{
+    transform: scale(1.55);
+    cursor: pointer;
+}
+main{
+    padding: 25px;
+    
+}
+main .listagem-pokemon{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+main .cartao-pokemon{
+    background-color: #f5f5f5;
+    width: 200px;
+    display:flex;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+
+}
+main .cartao-pokemon:hover{
+    background-color:#96d9d6 ;
+
+}
+.modo-escuro .cartao-pokemon{
+    background-color: #a8a8a8;
+}
+main .cartao-pokemon .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+main .cartao-pokemon .informacoes span{
+ /*background-color: aqua;*/
+ padding: 5px;
+ text-transform:uppercase;
+ font-size: 17px;
+}
+main .cartao-pokemon .gif{
+    /*background-color: ;*/
+    width: 90px;
+    height: 90px;
+}
+main .cartao-pokemon .tipos{
+    /*background-color: white;*/
+    display: flex;
+    gap: 15px;
+}
+main .cartao-pokemon .tipo{
+    padding: 8px;
+    border-radius: 10px;
+    }
+.grama{
+    background-color: #7ac74c;
+}
+.veneno{
+    background-color: #df67ddfd;
+}
+.fogo{
+    background-color: #ee8130;
+}
+.voador{
+    background-color: #738fa5;
+}
+.agua{
+    background-color: #6390f0;
+}
+.inseto{
+    background-color: #a6b91a;
+}
+main .descricao{
+    max-height: 90px;
+    overflow-y: scroll;
+    font-size: 15px;
+    padding-left: 10px;
+
+}
